@@ -1,0 +1,55 @@
+###I moved all the config to the bottom because it was having issues with load order (they sets were below it so it was making calls not
+#not estaablished yet)
+
+
+#include /home/Matthew/.config/sway/userSettings/cursor
+#include /home/Matthew/.config/sway/userSettings/keymap
+#include /home/Matthew/.config/sway/userSettings/monitor
+#         Default sway config made pretty and moved around
+
+# Read `man 5 sway` for a complete reference.
+
+blur_xray enable
+### Variables
+set $mod Mod4
+set $browser librewolf
+set $term kitty
+# Home row direction keys, like vim
+set $left n
+set $down e
+set $up u
+set $right i
+#set $rofi_cmd rofi \
+#        -terminal '$term'
+          ##all comments below this are for probably workspace
+          #behavior come back to this later``
+
+
+ ##rofi stuff I dont know what means yet
+
+#set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
+
+#set $menu "bash /home/prtyksh/.config/rofi/launchers/type-7/launcher.sh"
+
+
+### Idle configuration
+#
+# Example configuration:
+#
+# exec swayidle -w \
+#         timeout 300 'swaylock -f -c 000000' \
+#	  timeout 15 'swaylock -f -i ~/Wallpapers/ales-krivec-o0XfsSAgsxo-unsplash.jpg --indicator-radius 70 --inside-color 1e1e2e --inside-clear-color f5c2e7 --inside-wrong-color f38ba8 --ring-color 1e1e2e --ring-clear-color f5c2e7 --ring-ver-color 89b4fa --ring-wrong-color f38ba8 --inside-ver-color 89b4fa  --line-clear-color f5c2e7 --line-wrong-color f38ba8 --line-ver-color 89b4fa --font "SF Pro Display"' \
+#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+#          before-sleep 'swaylock -f -c 000000' \
+#	  before-sleep 'swaylock -f -i ~/Wallpapers/ales-krivec-o0XfsSAgsxo-unsplash.jpg --indicator-radius 70 --inside-color 1e1e2e --inside-clear-color f5c2e7 --inside-wrong-color f38ba8 --ring-color 1e1e2e --ring-clear-color f5c2e7 --ring-ver-color 89b4fa --ring-wrong-color f38ba8 --inside-ver-color 89b4fa  --line-clear-color f5c2e7 --line-wrong-color f38ba8 --line-ver-color 89b4fa --font "SF Pro Display"'
+#
+# This will lock your screen after 300 seconds of inactivity, then turn off
+# your displays after another 300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+
+#exec_always dunst
+
+include ~/.config/sway/userSettings/userSettings
+include ~/.config/sway/userConfig/windowRules
+include ~/.config/sway/customScripts/autostart

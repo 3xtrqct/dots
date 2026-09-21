@@ -1,0 +1,8 @@
+#bunch of shit about user settings. feels right to do it this way as opposed
+#to making my config thick as fuck and ugly
+
+include ~/.config/sway/userSettings/cursor
+include ~/.config/sway/userSettings/keymap
+include ~/.config/sway/userSettings/monitor
+include	~/.config/sway/userSettings/wallpaper
+include ~/.config/sway/userSettings/windowRules

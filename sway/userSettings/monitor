@@ -1,0 +1,25 @@
+#swaymsg -t get_outputs
+#use this command its important to see monitors
+
+#also man page for when you finally set this up
+#man 5 sway-output
+
+#laptop screen
+Output eDP-1 {
+	#per monitor background here
+	resolution 2880x1800@120hz
+	scale 1.8
+	pos 0 0
+
+
+}
+
+#monitor 1
+output HDMI-A-1 {
+	#per monitor background
+	#background ~/path/to/paper fill
+	resolution 2560x1440@144.002hz
+	scale 1
+	pos 1600 0
+	
+}

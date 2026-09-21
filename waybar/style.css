@@ -1,0 +1,160 @@
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: Lexend, "JetBrainsMono NFP";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: rgba(24, 24, 37, 0.8);
+}
+
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: #1e1e2e;
+  color: #bbbbbb/*#585b70;  Dimmed inactive workspaces text so the active text pops out cleanly */
+}
+
+#workspaces button:hover {
+  color: #1e1e2e;
+  background-color: #cdd6f4;
+}
+
+/* For Sway (Keeps container background dark, changes only the Kanji text to Catppuccin Sky Blue) */
+#workspaces button.focused {
+  background-color: #1e1e2e;
+  color: #89dceb;
+}
+
+/* For Hyprland */
+#workspaces button.active {
+  background-color: #1e1e2e;
+  color: #89dceb;
+}
+
+#workspaces button.urgent {
+  background-color: #1e1e2e;
+  color: #f38ba8;
+}
+
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#custom-spotify,
+#custom-notification,
+#cpu,
+#custom-temperature,
+#tray,
+#custom-memory,
+#window,
+#mpris,
+#battery {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: #1e1e2e;
+}
+
+#mpris.playing {
+  color: #a6e3a1;
+}
+
+#mpris.paused {
+  color: #9399b2;
+}
+
+#custom-sep {
+  padding: 0px;
+  color: #585b70;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#cpu {
+  color: #94e2d5;
+}
+
+#custom-memory {
+  color: #cba6f7;
+}
+#custom-temperature {
+    color: #a6e3a1;
+}
+
+#custom-temperature.warning {
+    color: #f9e2af;
+}
+
+#custom-temperature.critical {
+    color: #f38ba8;
+}
+#clock {
+  color: #74c7ec;
+}
+
+#clock.simpleclock {
+  color: #89b4fa;
+}
+
+#window {
+  color: #cdd6f4;
+}
+
+#pulseaudio {
+  color: #b4befe;
+}
+
+#pulseaudio.muted {
+  color: #a6adc8;
+}
+
+#custom-logo {
+  color: #89b4fa;
+}
+
+#custom-power {
+  color: #f38ba8;
+}
+
+tooltip {
+  background-color: #181825;
+  border: 2px solid #89b4fa;
+  border-radius: 12px;
+  padding: 15px 0px 15px 15px; /* Drops right-side padding entirely to counteract Waybar's blank spaces */
+}
+
+tooltip label {
+  font-family: "JetBrainsMono NFP";
+  margin-right: -10px; /* Pulls the grid content back into center, cutting off the invisible trailing spaces */
+}
+
+
+#battery {
+  color: #a6e3a1; 
+}
+
+#battery.charging, #battery.plugged {
+  color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+  color: #fab387;
+}
+
+#battery.critical:not(.charging) {
+  color: #f38ba8;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+

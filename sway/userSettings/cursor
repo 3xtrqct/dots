@@ -1,0 +1,39 @@
+#first is the mouse section
+#sets it for any xorg shit running behind wayland
+seat seat0 xcursor_theme "gentoo" 24
+
+#this will have the mouse, touchscreen, and maybe mouse stuff?
+input type:touchpad {
+    #left_handed enabled
+    tap enabled
+    #natural_scroll disabled
+    #disable while typing. aka I want to move my mouse while typing.
+    dwt disabled
+    
+    #default mouse stuff basically move presision.
+    accel_profile "flat" # disable mouse acceleration
+    
+    pointer_accel 0.5 # set mouse sensitivity. min -1 max 1
+    
+    #2 finger scroll wheel scroll. default stuff
+    scroll_method two_finger
+}
+
+#touchscreen
+#input type:touch {
+#    #sets tapping to left mouse 2 finger tapping to 
+#    #right click and if you are insane 3 fingers to
+#    #middle click
+#    tap enabled
+#    tap_button_map lrm
+#    
+#    #enables drag
+#    drag enabled
+#    
+#    natural_scroll enabled
+#    
+#    #makes it the good way to scroll
+#    scroll_method on_button_down
+}
+
+#do later setup tablet

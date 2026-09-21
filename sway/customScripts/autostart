@@ -1,0 +1,4 @@
+exec gentoo-pipewire-launcher
+exec waybar
+exec awww-daemon
+exec otd-daemon

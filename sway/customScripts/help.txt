@@ -1,0 +1,14 @@
+so as of now you need volume control scripts to work good
+make your cheatsheet work
+power checker
+fan speed swapper
+power profile switcher
+something to make the aura button have aura and not suck ass
+timeout scripts
+a lock screen script maybe? hopefully I can just steal one
+
+notifications. please. bland without them. but this means I learn rofi and that sucks buecause I dont wanna
+
+I want a stop watch aswell.
+how do expand bars work on waybar? and could I use rofi to have additioanl stuff I dont need to see?
+highlight current tab

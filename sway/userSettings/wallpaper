@@ -1,0 +1,7 @@
+#man 5 sway-output
+#important man for how the wallpaper stuff works
+#add a wallpaper swapper
+
+#output * bg /home/matthew/Pictures/wallpapers/1_cool\ scenery\ stuff/scenery_07.png fill
+
+
